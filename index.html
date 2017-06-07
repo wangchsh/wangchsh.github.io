@@ -41,7 +41,7 @@
     <h3 class="description">前端小白</h3>
     <div class="count-box">
       <a href="/archives"><div><strong>7</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>2</strong><br>分类</div></a>
+      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
@@ -68,6 +68,62 @@
 
         <section id="main">
   
+    <article id="post-js队列入栈出栈" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/05/js队列入栈出栈/" class="article-date">
+  <time class="post-time" datetime="2017-06-05T13:15:19.000Z" itemprop="datePublished">
+    <span class="post-month">6月</span><br/>
+    <span class="post-day">05</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/05/js队列入栈出栈/">js队列入栈出栈</a>
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
+  </div>
+
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。</p>
+<p>写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function queue(arr, item) &#123;</div><div class="line"></div><div class="line">arr.push(item);</div><div class="line">var delarr = arr.shift();</div><div class="line"></div><div class="line">return delarr;</div><div class="line">&#125;</div><div class="line">var testArr = [1,2,3,4,5];</div><div class="line">console.log(“Before: ” + JSON.stringify(testArr));</div><div class="line">console.log(queue(testArr, 6)); // Modify this line to test</div><div class="line">console.log(“After: ” + JSON.stringify(testArr));</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/05/js队列入栈出栈/" data-id="cj3n2li8g0009ekutrkom3hex" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
     <article id="post-21点算法" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/05/21点算法/" class="article-date">
@@ -91,6 +147,10 @@
 
         <div>
           
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
+  </div>
+
           
               
 
@@ -187,59 +247,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/21点算法/" data-id="cj3lnlk740001j4utzkt0bq8g" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-js队列入栈出栈" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/05/js队列入栈出栈/" class="article-date">
-  <time class="post-time" datetime="2017-06-05T13:15:19.000Z" itemprop="datePublished">
-    <span class="post-month">6月</span><br/>
-    <span class="post-day">05</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/05/js队列入栈出栈/">js队列入栈出栈</a>
-    </h1>
-  
-
-        <div>
-          
-          
-              
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。</p>
-<p>写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function queue(arr, item) &#123;</div><div class="line"></div><div class="line">arr.push(item);</div><div class="line">var delarr = arr.shift();</div><div class="line"></div><div class="line">return delarr;</div><div class="line">&#125;</div><div class="line">var testArr = [1,2,3,4,5];</div><div class="line">console.log(“Before: ” + JSON.stringify(testArr));</div><div class="line">console.log(queue(testArr, 6)); // Modify this line to test</div><div class="line">console.log(“After: ” + JSON.stringify(testArr));</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/js队列入栈出栈/" data-id="cj3lnlk840009j4ut1ut939u9" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/21点算法/" data-id="cj3n2li8o000dekutvmznpxie" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -320,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略三/" data-id="cj3lnlk810008j4utg9wq32vn" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略三/" data-id="cj3n2li7r0002ekut84cax80b" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -386,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略二/" data-id="cj3lnlk7t0006j4ut9tt5iwqp" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略二/" data-id="cj3n2li8t000gekutyat7mpp7" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -454,7 +462,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略/" data-id="cj3lnlk7g0003j4ut2x2dhc7b" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/hexo使用攻略/" data-id="cj3n2li7c0000ekutjasniz1b" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -509,7 +517,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/05/从WordPress转到hexo/" data-id="cj3lnlk8a000cj4utdjqki8xn" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/05/05/从WordPress转到hexo/" data-id="cj3n2li8c0008ekutu11wmmmh" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -559,12 +567,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#这里是正文，用markdown语法写</p>
-
+        <h1 id="这里是正文，用markdown语法写"><a href="#这里是正文，用markdown语法写" class="headerlink" title="这里是正文，用markdown语法写"></a>这里是正文，用markdown语法写</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/05/模板/" data-id="cj3lnlk8f000fj4utg3nnqsqh" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2014/08/05/模板/" data-id="cj3n2li840006ekutw477l8vl" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -619,7 +626,7 @@
     <h3 class="description">前端小白</h3>
     <div class="count-box">
       <a href="/archives"><div><strong>7</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>2</strong><br>分类</div></a>
+      <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>
 
