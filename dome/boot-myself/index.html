@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar navbar-default navbar-fixed-top" id="banner">
+        <div class="container">
+            <a class="scrollable" href="#top"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1157256/profile/profile-80.jpg" alt="qlip | UI/UX Design and Development" title="qlip | UI/UX Design and Development" /></a>
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="scrollable" href="#top">关 于 我</a></li>
+                    <li><a class="scrollable" href="#portfolio">我 做 过 的 项 目</a></li>
+                    <li><a class="scrollable" href="#contact">联 系 我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a id="top" name="home"></a>
+    <main>
+        <header>
+            <div class="intro-text">
+                <p>大学中自学前端技术，理解能力强，具有自主学习的能力， 感受到前端的反馈及时的特性以及技术的快速发展带来的机会和挑战，热爱前端技术，拥有极客精神。</p>
+                <hr class="star-bright" /><span class="skills">前端小白</span>
+            </div><img src="https://avatars1.githubusercontent.com/u/26668144?v=3&s=460" alt="A picture of Justin looking at San Francisco from across the Golden Gate Bridge." title="A picture of Justin looking at San Francisco from across the Golden Gate Bridge."
+            />
+        </header>
+        <!-- Gallery Grid Section-->
+        <section id="portfolio">
+            <h2>我 做 过 的 项 目</h2>
+            <hr class="star-dark" />
+            <ul class="grid">
+                <li><img src="http://i.imgur.com/6W8QLim.gif" alt="" /></li>
+                <li><img src="http://i.imgur.com/p3EAZfU.jpg" alt="" /></li>
+                <li><img src="http://i.imgur.com/NtRjUAm.gif" alt="" /></li>
+                <li><img src="http://i.imgur.com/W93ZJZX.gif" alt="" /></li>
+                <li><img src="http://i.imgur.com/Z6NYaN1.gif" alt="" /></li>
+                <li><img src="http://i.imgur.com/YIIuG89.gif" alt="" /></li>
+            </ul>
+        </section>
+        <!-- Contact Section-->
+        <section id="contact">
+            <h2>联 系 我</h2>
+            <hr class="star-dark" />
+            <div>
+                <form id="contactForm" novalidate="">
+                    <div class="form-item">
+                        <label for="“name”">姓名</label>
+                        <input id="name" type="text" placeholder="姓名" required="" />
+                    </div>
+                    <div class="form-item">
+                        <label for="“email”">电子邮件</label>
+                        <input id="email" type="email" placeholder="电子邮件" required="" />
+                    </div>
+                    <div class="form-item">
+                        <label for="“phone”">手机号码</label>
+                        <input id="phone" type="tel" placeholder="手机号码" required="" />
+                    </div>
+                    <div class="form-item">
+                        <label for="“message”">留言</label>
+                        <textarea id="message" rows="5" placeholder="留言" required=""></textarea>
+                    </div><br/>
+                    <button type="submit">提交</button>
+                </form>
+                <div>
+                    <p>想和我联系吗?如果你想要更多的关于我自己或我的经历的信息，问我的简历，关于如何解决你的前端问题的建议，或者是生活的意义。随时都可以随时给我写信。 我保证答复</p>
+                    <p>注意: 请不要给我发垃圾邮件 :)</p>
+                </div>
+            </div>
+        </section>
+        <!-- Scroll to Top Button (Only supposed to be visible on small and small screen sizes)-->
+        <div class="scroll-top"><a class="button scrollable" href="#top"><i class="fa fa-chevron-up"></i></a></div>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <div id="footer-above">
+            <div>
+                <h3>关于这个页面</h3>
+                <p>Made with <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br/>by <a href="wangchsh.githun.io">sunny</a>.</p>
+            </div>
+            <div>
+                <h3>我的联系方式</h3>
+                <ul>
+                    <li><a class="button social" href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                    <li><a class="button social" href="#"><i class="fa fa-fw fa-github"></i></a></li>
+                    <li><a class="button social" href="#"><i class="fa fa-weibo" aria-hidden="true"></i></i></a></li>
+                    <li><a class="button social" href="#" title="My Flickr"><i class="fa fa-fw fa-flickr"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-below">qlip ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>. All Rights Reversed
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-easing/1.2/jquery.easing.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(window).on('resize', function() {
+            'use strict';
+            var element = document.querySelector('#banner'),
+                elHeight = 0,
+                elTop = 0,
+                dHeight = 0,
+                wHeight = 0,
+                wScrollCurrent = 0,
+                wScrollBefore = 0,
+                wScrollDiff = 0;
+            window.addEventListener('scroll', function() {
+                // Hide the displayed menu. If you want to scroll, you're obviously not interested in the options.
+                $('.navbar-collapse').collapse('hide');
+                $('.navbar-toggle').addClass('collapsed').blur();
+                if ($(window).width() <= 768) {
+                    elHeight = element.offsetHeight;
+                    dHeight = document.body.offsetHeight;
+                    wHeight = window.innerHeight;
+                    wScrollCurrent = window.pageYOffset;
+                    wScrollDiff = wScrollBefore - wScrollCurrent;
+                    elTop = parseInt(window.getComputedStyle(element).getPropertyValue('top')) + wScrollDiff;
+
+                    // scrolled to the very top; element sticks to the top
+                    if (wScrollCurrent <= 0) {
+                        element.style.top = '0px';
+                    } // scrolled up; element slides in
+                    else if (wScrollDiff > 0) {
+                        element.style.top = (elTop > 0 ? 0 : elTop) + 'px';
+                    } // scrolled down
+                    else if (wScrollDiff < 0) {
+                        // scrolled to the very bottom; element slides in
+                        if (wScrollCurrent + wHeight >= dHeight - elHeight) {
+                            element.style.top = ((elTop = wScrollCurrent + wHeight - dHeight) < 0 ? elTop : 0) + 'px';
+                        } // scrolled down; element slides out
+                        else {
+                            element.style.top = (Math.abs(elTop) > elHeight ? -elHeight : elTop) + 'px';
+                        }
+                    }
+                    wScrollBefore = wScrollCurrent;
+                } //
+                else element.style.top = '0px';
+            });
+        }).resize();
+
+        // Floating label headings for the contact form
+        $(function() {
+            $("body")
+                .on("input propertychange", ".form-item", function(e) {
+                    $(this).toggleClass("form-item-filled", !!$(e.target).val());
+                })
+                .on("focus", ".form-item", function() {
+                    $(this).addClass("form-item-focused");
+                })
+                .on("blur", ".form-item", function() {
+                    $(this).removeClass("form-item-focused");
+                });
+        });
+
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+            target: '.navbar-fixed-top'
+        })
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('body').on('click', 'a.scrollable', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
