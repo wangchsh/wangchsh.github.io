@@ -23,8 +23,6 @@
     <link rel="icon" href="/favicon.png">
   
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/plugin/bganimation/bg.css">
   
@@ -42,7 +40,7 @@
     <h2 class="author">sunny</h2>
     <h3 class="description">前端小白</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>
@@ -186,12 +184,39 @@
 <p>在点数为0或负数时，玩家应当下最小赌注。当然，最好是干脆不玩，坐等点数变正。早期的那些算牌手就是这么做的，但 现在的赌场里，从游弋在各桌间的桌面经理，到高悬在天花板上的监视器，都虎视耽耽地监视着每个赌徒的行为。如果总是点坏不压、点好猛压，还不如直接在脸上 写五个大字：“我是算牌手”，说不定还暴露得晚些。</p>
 <p>算牌本身并不难练，难的是和赌场的斗智斗勇。在《打败庄家》刚出版时，它轰动一时，很快成为畅销书，激励了无数赌徒 涌向赌场，一试身手。赌场对此大为恐慌，有些赌场甚至关闭了二十一点赌桌。但是，很快他们就又恢复了镇定，因为他们发现，涌来的大批赌徒中，只有极少数人 真正掌握了算牌法，其他大多数人只不过是一知半解、道听途说的萝卜。索普这本书为极少数人提供了打败庄家的方法，但对大多数人来说，实际效果却是个二十一 点的广告，让他们自以为也能够在二十一点上赢钱。这是个赌场梦寐以求的广告，是他们自己无论花多少钱都做不来的广告。</p>
 <p>在刚开始时，算牌还是个新鲜事物，没有这方面的法律规定，开赌场的又多是黑社会，一旦发现算牌手，一律当老千处理， 痛打一顿后扔到臭水沟里。后来大家总算对算牌达成了共识：这是样技术活儿，是在遵守赌场规则的情况下，靠自己的聪明才智来赌博的一种方式；同时各大赌场也 多被华尔街的金融巨头接管，开始西装领带的管理方式，摆开堂堂之阵来赚钱，于是算牌手总算不再有人身危险，但赌场既然是人家的私有财产，就有权把某些他们 不欢迎的人拒之门外。因此，对一个算牌手来说，难的不是算牌，而是如何不被赌场发现。</p>
-<p>同时，赌场也巧妙地改变了规则，比如用八副牌代替一副牌，牌发到一半时就重新洗牌，不准在一局牌的中间加入赌局等 等，极大地增加了算牌的难度。他们逐渐稳住阵脚后，便大开二十一点赌桌，从此二十一点就取代了“蟹赌（Crap）”，成为赌场里最热门的游戏。但在算牌法 已经发明了四十多年后的今天，我们在二十一点赌桌上见到的，仍然大多数是萝卜。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var count = 0;</div><div class="line"></div><div class="line">function cc(card) &#123;</div><div class="line">// Only change code below this line</div><div class="line"></div><div class="line">if(card&gt;=2&amp;&amp;card&lt;=6)&#123;</div><div class="line">count++;</div><div class="line"></div><div class="line">&#125;else if(card&gt;=7&amp;&amp;card&lt;=9)&#123;</div><div class="line">count = count+0;</div><div class="line"></div><div class="line">&#125;else if(card==10||’J’||’Q’||’K’||’A’)&#123;</div><div class="line">count-=1;</div><div class="line"></div><div class="line">&#125;</div><div class="line">if(count &gt; 0)&#123;</div><div class="line">return count + ‘ Bet’;</div><div class="line">&#125;else&#123;</div><div class="line">return count + ‘ Hold’;</div><div class="line">&#125;</div><div class="line">return “Change Me”;</div><div class="line">// Only change code above this line</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Add/remove calls to test your function.</div><div class="line">// 提示: Only the last will display</div><div class="line">cc(2); cc(3); cc(7); cc(‘K’); cc(‘A’);</div></pre></td></tr></table></figure></p>
+<p>同时，赌场也巧妙地改变了规则，比如用八副牌代替一副牌，牌发到一半时就重新洗牌，不准在一局牌的中间加入赌局等 等，极大地增加了算牌的难度。他们逐渐稳住阵脚后，便大开二十一点赌桌，从此二十一点就取代了“蟹赌（Crap）”，成为赌场里最热门的游戏。但在算牌法 已经发明了四十多年后的今天，我们在二十一点赌桌上见到的，仍然大多数是萝卜。</p>
+<pre><code>var count = 0;
 
+function cc(card) {
+// Only change code below this line
+
+if(card&gt;=2&amp;&amp;card&lt;=6){
+count++;
+
+}else if(card&gt;=7&amp;&amp;card&lt;=9){
+count = count+0;
+
+}else if(card==10||’J’||’Q’||’K’||’A’){
+count-=1;
+
+}
+if(count &gt; 0){
+return count + ‘ Bet’;
+}else{
+return count + ‘ Hold’;
+}
+return “Change Me”;
+// Only change code above this line
+}
+
+// Add/remove calls to test your function.
+// 提示: Only the last will display
+cc(2); cc(3); cc(7); cc(‘K’); cc(‘A’);
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/21点算法/" data-id="cj3pu80fz00000outnnb2gyd2" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/21点算法/" data-id="cj5ni4hrj0000z4ovz4f2jwgz" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -263,7 +288,7 @@
     <h2 class="author">sunny</h2>
     <h3 class="description">前端小白</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>

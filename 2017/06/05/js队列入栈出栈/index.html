@@ -5,25 +5,23 @@
   
   <title>js队列入栈出栈 | i am sunny</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。1234567891011function queue(arr, item) &amp;#123;a">
+  <meta name="description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。 function queue(arr, item) {  arr.push(item);">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js队列入栈出栈">
 <meta property="og:url" content="http://yoursite.com/2017/06/05/js队列入栈出栈/index.html">
 <meta property="og:site_name" content="i am sunny">
-<meta property="og:description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。1234567891011function queue(arr, item) &amp;#123;a">
+<meta property="og:description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。 function queue(arr, item) {  arr.push(item);">
 <meta property="og:updated_time" content="2017-06-06T14:24:25.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js队列入栈出栈">
-<meta name="twitter:description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。1234567891011function queue(arr, item) &amp;#123;a">
+<meta name="twitter:description" content="在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。 写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。 function queue(arr, item) {  arr.push(item);">
   
     <link rel="alternate" href="/atom.xml" title="i am sunny" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/plugin/bganimation/bg.css">
@@ -42,7 +40,7 @@
     <h2 class="author">sunny</h2>
     <h3 class="description">前端小白</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>
@@ -105,12 +103,23 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到队列 的末尾，旧的条目会从 队列 的头部被移出。</p>
-<p>写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function queue(arr, item) &#123;</div><div class="line"></div><div class="line">arr.push(item);</div><div class="line">var delarr = arr.shift();</div><div class="line"></div><div class="line">return delarr;</div><div class="line">&#125;</div><div class="line">var testArr = [1,2,3,4,5];</div><div class="line">console.log(“Before: ” + JSON.stringify(testArr));</div><div class="line">console.log(queue(testArr, 6)); // Modify this line to test</div><div class="line">console.log(“After: ” + JSON.stringify(testArr));</div></pre></td></tr></table></figure></p>
+<p>写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。</p>
+<pre><code>function queue(arr, item) {
 
+arr.push(item);
+var delarr = arr.shift();
+
+return delarr;
+}
+var testArr = [1,2,3,4,5];
+console.log(“Before: ” + JSON.stringify(testArr));
+console.log(queue(testArr, 6)); // Modify this line to test
+console.log(“After: ” + JSON.stringify(testArr));
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/05/js队列入栈出栈/" data-id="cj3pu80hf000c0outdw7covul" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/05/js队列入栈出栈/" data-id="cj5ni4hst000cz4ov13zxflym" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
@@ -182,7 +191,7 @@
     <h2 class="author">sunny</h2>
     <h3 class="description">前端小白</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>8</strong><br>文章</div></a>
       <a href="/categories"><div><strong>3</strong><br>分类</div></a>
       <a href="/tags"><div><strong>3</strong><br>标签</div></a>
     </div>
